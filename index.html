@@ -1,3 +1,36 @@
+<!--        
+    To do:
+    yi ->
+    Make rounded corners for event cards
+    make website not ugli
+    Lorem ipsum
+    make rsvp button for event and contact
+    change nav bar color
+
+    maney ->
+    Try atomic componenents approach (nav bar, calendar, cards)
+
+    MAYLEEN NEXT PRESIDENT WOOOOOOO
+    Bruh 
+    YEP
+    if harrison not doing it imma be so sadge D:
+    It's ok man, u graduated from that shit. It's not ur problem anoymore
+    yah but like if i don't find next president then wat happen to YADD
+    Ayana and Eon/Ion/Aeon??
+    BRUH NEXT PRESIDENT BE LITTLE KIDS :0
+    That's what happens when we don't have new blood. Either that or they shorten the term to a year
+    Hmm maybe butttt what does harrison look like btw
+    Oh wait, maybe raina? Trinity's sis
+    Uh i can text her to see if shes coming
+    But anyways so candidate: harrison, raina, and mayleen :D
+    we can text abt it next time cuz imma make some curry and hot dog cuz im hungry and ill make the repo later 
+    Ok bon appetit
+    Bon apetit means to eat anime tiddies
+    yum yum
+    cya
+    bye
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,6 +47,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity = "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin = "anonymous">          
+        <link rel="stylesheet" href = "https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity = "sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin = "anonymous">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -72,9 +107,9 @@
                                 <p class="text-muted">*more description*</p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
                                     <!--change this to whatever link like insta or facebook for yad-->
-                                    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
+                                    <a class="text-gradient" href="https://instagram.com/miamiyad?igshid=NjIwNzIyMDk2Mg==" target = "_blank"><i class="bi bi-instagram"></i></a>
+                                    <a class="text-gradient" href="https://www.youtube.com/@Studio-BDS/videos" target = "_blank"><i class="bi bi-youtube"></i></a>
+                                    <a class="text-gradient" href="https://www.facebook.com/people/Miami-YAD/100090081758325/" target = "_blank"><i class="bi bi-facebook"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -90,15 +125,49 @@
                                 <p class="lead fw-light mb-4">*maybe calendar*</p>
                                 <p class="text-muted">*upcoming events maybe*</p>
 
-
-                                <div class="cardBox">
-                                    <img src="DSC02421.jpg" alt="Avatar" style="width:100%">
-                                    <div class="containerPadding">
-                                      <h4><b>* placeholder event card *</b></h4>
-                                      <p>* event description *</p>
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <!--<img class="card-img-top" src="" alt="Card image cap">-->
+                                        <img src="DSC02421.JPG" alt="Avatar" style="width:100%">
+                                        <div class="cardBox">
+                                            <h4 class="card-title">* event name *</h4>
+                                            <p class="card-text">
+                                                * text *
+                                            </p>
+                              
+                                            <!--<p class="card-text">
+                                                <small class="text-muted">
+                                                    Last updated * how many minutes ago* mins ago
+                                                </small>
+                                            </p>-->
+                                            <button type="button" class="btn btn-outline-primary" id="right-panel-link" href="#right-panel">* link *</button>
+                                        </div>
                                     </div>
-                                  </div> 
-
+                              
+                                    <div class="card">
+                                        <img src="DSC02421.JPG" alt="Avatar" style="width:100%">
+                                        <div class="cardBox">
+                                            <h4 class="card-title">* event *</h4>
+                                            <p class="card-text">
+                                                * text *
+                                            </p>
+                              
+                                            <button type="button" class="btn btn-outline-primary" id="right-panel-link" href="#right-panel">* link *</button>
+                                        </div>
+                                    </div>
+                              
+                                    <div class="card">
+                                        <img src="DSC02421.JPG" alt="Avatar" style="width:100%">
+                                        <div class="cardBox">
+                                            <h4 class="card-title">* event *</h4>
+                                            <p class="card-text">
+                                                * text *
+                                            </p>
+                                              
+                                            <button type="button" class="btn btn-outline-primary" id="right-panel-link" href="#right-panel">* link *</button>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!--<div class="d-flex justify-content-center fs-2 gap-4">
                                     --change this to whatever link like insta or facebook for yad
