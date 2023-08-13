@@ -8416,6 +8416,36 @@ body {
   border-radius: 5px;
 }
 
+
+.one
+{
+    background-color:limegreen;    
+    float: left;  
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width:30%;
+}
+.two
+{
+    background-color:orange;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width:30%;
+}
+
 img {
   border-radius: 5px 5px 0 0;
 }
