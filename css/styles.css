@@ -8418,11 +8418,10 @@ body {
 
 
 .one
-{
-    background-color:limegreen;    
+{   
     float: left;  
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     padding: 10px;
     display: flex;
