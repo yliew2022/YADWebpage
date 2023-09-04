@@ -8433,9 +8433,7 @@ body {
 
 .vidPosition 
 {
-    position: absolute;
-    left: 70%;
-    top: 218%;
+    position: relative;
     transform:translateX(-70%);
 }
 
