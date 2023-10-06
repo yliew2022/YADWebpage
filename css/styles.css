@@ -8470,7 +8470,7 @@ body {
 .calendar {
   font-family: 'IBM Plex Sans', sans-serif;
   position: relative;
-  max-width: 400px; /*change as per your design need */
+  max-width: 800px; /*change as per your design need */
   min-width: 320px;
   background: var(--calendar-bg-color);
   color: var(--calendar-font-color);
@@ -8605,6 +8605,7 @@ body {
 border: 1px solid transparent;
 pointer-events: none;
 }
+
 
 img {
   border-radius: 5px 5px 0 0;
