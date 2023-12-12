@@ -112,6 +112,12 @@ app.get('/events', function (req, res) {
  *         required: true
  *         schema:
  *           type: string
+ *       - name: date
+ *         description: (month/date/year)
+ *         in: formData
+ *         required: true
+ *         schema:
+ *            type: string
  *     responses:
  *       200:
  *         description: Error. Unable to update resource.
@@ -140,6 +146,7 @@ app.put('/events/:eventId', function (req, res) {
   existingEvent.eventDetails = req.body.eventDetails || existingEvent.eventDetails;
   existingEvent.image = req.body.image || existingEvent.image;
   existingEvent.link = req.body.link || existingEvent.link;
+  existingEvent.date = req.body.date || existingEvent.date;
 
   fs.writeFile(filePath, JSON.stringify(existingEvent, null, 2), function (err) {
     const rsp_obj = {};

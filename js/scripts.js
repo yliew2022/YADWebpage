@@ -12,6 +12,7 @@ fetch('http://localhost:5678/events')
                             <div class="card-body">
                                 <h5 class="card-title">${event.eventName}</h5>
                                 <p class="card-text">${event.eventDetails}</p>
+                                <p class="card-text">${event.date}</p> <!-- Add this line for displaying date -->
                             </div>
                             <div class="card-footer">
                                 <a href="${event.link}" class="btn btn-primary">RSVP</a>
@@ -25,3 +26,4 @@ fetch('http://localhost:5678/events')
         }
     })
     .catch(error => console.error('Error fetching data:', error));
+

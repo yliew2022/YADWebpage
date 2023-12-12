@@ -20,14 +20,30 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       for (let day = 1; day <= daysInMonth; day++) {
-          const dateItem = document.createElement('div');
-          dateItem.className = 'date-box';
-          dateItem.textContent = day;
-          const eventInfo = document.createElement('div');
-          eventInfo.className = 'event-info';
-          eventInfo.innerHTML = `<p>Time: 3:00 PM</p>`;
-          dateItem.appendChild(eventInfo);
-          dates.appendChild(dateItem);
+        const dateItem = document.createElement('div');
+        dateItem.className = 'date-box';
+        dateItem.textContent = day;
+      
+        // Check if there's an event for the current date (you should replace this condition with your own logic)
+        const hasEvent = hasEventForDate(currentMonthDate.getFullYear(), currentMonthDate.getMonth(), day);
+      
+        const eventInfo = document.createElement('div');
+        eventInfo.className = 'event-info';
+      
+        // If there's an event, add a symbol (you can customize the symbol as needed)
+        if (hasEvent) {
+          const eventSymbol = document.createElement('span');
+          eventSymbol.className = 'event-symbol';
+          eventSymbol.textContent = '•'; // You can use any symbol or text here
+          eventInfo.appendChild(eventSymbol);
+        }
+      
+        dateItem.appendChild(eventInfo);
+        dates.appendChild(dateItem);
+      }
+      
+      function hasEventForDate(year, month, day) {
+        return false;
       }
   }
 

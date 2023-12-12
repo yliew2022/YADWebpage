@@ -8445,7 +8445,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
     width:45%;
 }
 
@@ -8456,15 +8455,19 @@ body {
 }
 
 .iconGap {
+  margin-top: 5%;
   margin-left: 35%;
 }
 
 .centerVid {
-  display: block;
+  display: flex;
   margin-top: 15%;
   margin-left: 85%;
   margin-right: auto;
   width: 40%;
+  text-align: center;
+  align-items: right;
+  flex-direction: column;
 }
 
 .custom-image {
@@ -8472,10 +8475,75 @@ body {
 }
 
 .calendar {
+  margin-top: 5%;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  padding: 20px; /* Add padding for better spacing */
+}
+
+/* Calendar header */
+.calendar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px; /* Add some space below the header */
+}
+
+/* Calendar navigation buttons */
+.calendar .header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff; /* Change the color to your preference */
+}
+
+/* Month display */
+.calendar .header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Days of the week */
+.calendar .days {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px; /* Add padding for better spacing */
+  font-weight: bold;
+}
+
+/* Individual day styling */
+.calendar .day {
+  width: 14.28%; /* Set equal width for each day */
+}
+
+/* Date styling */
+.calendar .dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px; /* Add gap between date cells */
+}
+
+/* Individual date styling */
+.calendar .date {
+  width: 60px;
+  height: 60px; /* Set a fixed height */
+  line-height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+}
+
+/* Hover effect on date */
+.calendar .date:hover {
+  background-color: #f0f0f0; /* Change the color to your preference */
 }
 
 .header {
@@ -8536,6 +8604,18 @@ button:hover {
   cursor: pointer;
   transition: background-color 0.2s, border-color 0.2s;
   margin-left: 15%;
+}
+
+.calendar .date-box {
+  width: 50px;
+  height: 60px; /* Set a taller height */
+  line-height: 40px; /* Match the height for vertical centering */
+  border-radius: 5px; /* Add border-radius for a slightly rounded appearance */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
 }
 
 .date-box:hover {
