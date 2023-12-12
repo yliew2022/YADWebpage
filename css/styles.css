@@ -8516,6 +8516,11 @@ body {
   font-weight: bold;
 }
 
+.has-event {
+  color: black;
+  font-size: 75%;
+}
+
 /* Individual day styling */
 .calendar .day {
   width: 14.28%; /* Set equal width for each day */
@@ -8545,6 +8550,26 @@ body {
 .calendar .date:hover {
   background-color: #f0f0f0; /* Change the color to your preference */
 }
+
+.event-info {
+    position: relative;
+    cursor: pointer;
+}
+
+.event-tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.event-info:hover .event-tooltip {
+    opacity: 1;
+}
+
 
 .header {
   display: flex;
