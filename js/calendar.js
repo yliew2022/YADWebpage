@@ -78,16 +78,18 @@ document.addEventListener('DOMContentLoaded', function () {
             const eventName = event.eventName || 'Event Name not available';
             const eventDetails = event.eventDetails || 'Details not available';
             const eventImage = event.image || 'Image not available';
-            const eventDateStr = event.date || 'Date not available';
+            const eventDate = event.date || 'Date not available';
 
             tooltip.innerHTML = `
-                <div>
-                    <img src="${eventImage}" alt="Event Image" style="max-width: 300px; max-height: 300px;">
-                </div>
-                <div>Event: ${eventName}</div>
-                <div>Details: ${eventDetails}</div>
-                <div>Date: ${eventDateStr}</div>
-            `;
+                        <div class="card h-100">
+                            <img src="${eventImage}" class="card-img-top custom-image" alt="${event.eventName} Image">
+                            <div class="card-body">
+                                <h5 class="card-title">${eventName}</h5>
+                                <p class="card-text">${eventDetails}</p>
+                                <p class="card-text">${eventDate}</p> <!-- Add this line for displaying date -->
+                            </div>
+                        </div>
+                    `;
             document.body.appendChild(tooltip);
             const rect = eventInfo.getBoundingClientRect();
             tooltip.style.position = 'absolute';
