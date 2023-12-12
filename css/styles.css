@@ -8467,7 +8467,9 @@ body {
   width: 40%;
 }
 
-
+.custom-image {
+  height: 200px;
+}
 
 .calendar {
   background-color: #fff;

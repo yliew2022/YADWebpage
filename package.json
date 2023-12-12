@@ -1,0 +1,25 @@
+{
+  "name": "webpage-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "glob": "^8.1.0",
+    "jsdoc": "^4.0.2",
+    "npm-install-all": "^1.1.21",
+    "os": "^0.1.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  }
+}

@@ -19,18 +19,14 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>BLIA Miami YAD</title>
-        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity = "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin = "anonymous">          
         <link rel="stylesheet" href = "https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity = "sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin = "anonymous">
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" type="" href="css/styles.css" />
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -44,12 +40,10 @@
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="calendar.html">Calender</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                            <!--<li class="nav-item"><a class="nav-link" href="??.html">Calender *or Events*</a></li>-->
                         </ul>
                     </div>
                 </div>
             </nav>
-            <!-- Header-->
             <header class="py-5">
                 <div class="container px-5 pb-5">
                     <div class="row gx-5 align-items-center">
@@ -66,10 +60,9 @@
                             </div>
                         </div>
                         <div class="col-xxl-6">
-                            <!-- Header profile picture-->
                             <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                                 <div class="profile bg-gradient-primary-to-secondary">
-                                    <img class="profile-img" src="blia yad logo.jpg" alt="..." />
+                                    <img class="profile-img" src="/images/blia yad logo.jpg" alt="..." />
                                 </div>
                             </div>
                         </div>
@@ -116,105 +109,66 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-xxl-8">
                             <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Upcomming Events</span></h2>
-                                <p class="lead fw-light mb-4">*maybe calendar*</p>
-
-                                <div class="calendar">
-                                    <div class="header">
-                                        <button id="prev-month">Previous</button>
-                                        <h1 id="current-month"></h1>
-                                        <button id="next-month">Next</button>
+                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Upcoming Events</span></h2>
+                                <p class="text-muted">Please see below for our next three upcoming events!</p>
+                                <div class="row row-cols-1 row-cols-md-3 g-4">
+                                    <div id="d2fa5489-5bac-41cd-904f-436afc8458d8" class="col card">
+                                        <div class="card h-100">
+                                            <img src="event1_image.jpg" class="card-img-top" alt="Event 1 Image">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Event 1</h5>
+                                                <p class="card-text">Event 1 description goes here.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="event1_link.html" class="btn btn-primary">Learn More</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="days">
-                                        <div class="day">Sun</div>
-                                        <div class="day">Mon</div>
-                                        <div class="day">Tue</div>
-                                        <div class="day">Wed</div>
-                                        <div class="day">Thu</div>
-                                        <div class="day">Fri</div>
-                                        <div class="day">Sat</div>
+                                    <div id="c9ebc5d7-b479-46fc-af67-c6626b17a079" class="col card">
+                                        <div class="card h-100">
+                                            <img src="event2_image.jpg" class="card-img-top" alt="Event 2 Image">
+                                            <div class="card-body">
+                                                <!-- Event 2 content -->
+                                                <h5 class="card-title">Event 2</h5>
+                                                <p class="card-text">Event 2 description goes here.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="event2_link.html" class="btn btn-primary">Learn More</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="dates" id="dates">
+                                    <div id="bddc67a0-9104-4fdd-95b1-5215ddc6cdeb" class="col card">
+                                        <div class="card h-100">
+                                            <img src="event3_image.jpg" class="card-img-top" alt="Event 3 Image">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Event 3</h5>
+                                                <p class="card-text">Event 3 description goes here.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="event3_link.html" class="btn btn-primary">Learn More</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+            
                                 
-
-                                <p class="text-muted">Please see below for our next three upcomming events!</p>
-
-                                <div class="card-deck">
-                                    <div class="card">
-                                        <!--<img class="card-img-top" src="" alt="Card image cap">-->
-                                        <img src="DSC02421.JPG" alt="Avatar" style="width:100%">
-                                        <div class="cardBox">
-                                            <h4 class="card-title">* event name *</h4>
-                                            <p class="card-text">
-                                                * text *
-                                            </p>
-                              
-                                            <!--<p class="card-text">
-                                                <small class="text-muted">
-                                                    Last updated * how many minutes ago* mins ago
-                                                </small>
-                                            </p>-->
-                                            <button type="button" class="btn btn-outline-primary" id="right-panel-link" href="#right-panel">* link *</button>
-                                        </div>
-                                    </div>
-                              
-                                    <div class="card">
-                                        <img src="DSC02421.JPG" alt="Avatar" style="width:100%">
-                                        <div class="cardBox">
-                                            <h4 class="card-title">* event *</h4>
-                                            <p class="card-text">
-                                                * text *
-                                            </p>
-                              
-                                            <button type="button" class="btn btn-outline-primary" id="right-panel-link" href="#right-panel">* link *</button>
-                                        </div>
-                                    </div>
-                              
-                                    <div class="card">
-                                        <img src="DSC02421.JPG" alt="Avatar" style="width:100%">
-                                        <div class="cardBox">
-                                            <h4 class="card-title">* event *</h4>
-                                            <p class="card-text">
-                                                * text *
-                                            </p>
-                                              
-                                            <button type="button" class="btn btn-outline-primary" id="right-panel-link" href="#right-panel">* link *</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--<div class="d-flex justify-content-center fs-2 gap-4">
-                                    --change this to whatever link like insta or facebook for yad
-                                    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
-                                </div>-->
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            
         </main>
-        <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0">BLIA &copy; All rights reserved</div></div>
-                    <!--<div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
-                    </div>-->
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

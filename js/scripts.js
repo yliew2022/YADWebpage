@@ -1,46 +1,27 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const prevButton = document.getElementById('prev-month');
-  const nextButton = document.getElementById('next-month');
-  const currentMonth = document.getElementById('current-month');
-  const dates = document.getElementById('dates');
-  const today = new Date();
-  let currentMonthDate = new Date(today.getFullYear(), today.getMonth(), 1);
+fetch('http://localhost:5678/events')
+    .then(response => response.json())
+    .then(data => {
+        if (Array.isArray(data.events)) {
+            data.events.forEach(event => {
+                const eventContainer = document.getElementById(event.eventId);
 
-  function renderCalendar() {
-      currentMonth.textContent = new Date(currentMonthDate).toLocaleString('default', { month: 'long', year: 'numeric' });
-      dates.innerHTML = '';
-
-      const daysInMonth = new Date(currentMonthDate.getFullYear(), currentMonthDate.getMonth() + 1, 0).getDate();
-      const firstDay = new Date(currentMonthDate.getFullYear(), currentMonthDate.getMonth(), 1).getDay();
-
-      for (let i = 0; i < firstDay; i++) {
-          const emptyDate = document.createElement('div');
-          emptyDate.className = 'date-box';
-          dates.appendChild(emptyDate);
-      }
-
-      for (let day = 1; day <= daysInMonth; day++) {
-          const dateItem = document.createElement('div');
-          dateItem.className = 'date-box';
-          dateItem.textContent = day;
-          const eventInfo = document.createElement('div');
-          eventInfo.className = 'event-info';
-          eventInfo.innerHTML = `<p>Time: 3:00 PM</p>`;
-          dateItem.appendChild(eventInfo);
-          dates.appendChild(dateItem);
-      }
-  }
-
-  prevButton.addEventListener('click', function() {
-      currentMonthDate.setMonth(currentMonthDate.getMonth() - 1);
-      renderCalendar();
-  });
-
-  nextButton.addEventListener('click', function() {
-      currentMonthDate.setMonth(currentMonthDate.getMonth() + 1);
-      renderCalendar();
-  });
-
-  renderCalendar();
-
-});
+                if (eventContainer) {
+                    eventContainer.innerHTML = `
+                        <div class="card h-100">
+                            <img src="${event.image}" class="card-img-top custom-image" alt="${event.eventName} Image">
+                            <div class="card-body">
+                                <h5 class="card-title">${event.eventName}</h5>
+                                <p class="card-text">${event.eventDetails}</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="${event.link}" class="btn btn-primary">RSVP</a>
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+        } else {
+            console.error('"events" property is not an array in the fetched data.');
+        }
+    })
+    .catch(error => console.error('Error fetching data:', error));
