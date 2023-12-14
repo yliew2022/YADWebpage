@@ -1,174 +1,75 @@
-<!--        
-    To do:
-    yi ->
-    Make rounded corners for event cards
-    make website not ugli
-    Lorem ipsum
-    make rsvp button for event and contact
-    change nav bar color
-
-    maney ->
-    Try atomic componenents approach (nav bar, calendar, cards)
--->
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>BLIA Miami YAD</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity = "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin = "anonymous">          
-        <link rel="stylesheet" href = "https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity = "sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin = "anonymous">
-        <link rel="stylesheet" type="" href="css/styles.css" />
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">BLIA Miami YAD</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="calendar.html">Calender</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <header class="py-5">
-                <div class="container px-5 pb-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-xxl-5">
-                            <!-- Header text content-->
-                            <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Volunteering &middot; Leadership &middot; Buddhism</div></div>
-                                <div class="fs-3 fw-light text-muted">Buddha's Light International Association</div>
-                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Miami YAD</span></h1>
-                                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                        <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="contact.html">Contact</a>
-                                        <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="project.html">Projects</a>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-6">
-                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                                <div class="profile bg-gradient-primary-to-secondary">
-                                    <img class="profile-img" src="/images/blia yad logo.jpg" alt="..." />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- About Section-->
-            <section class="bg-light py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-8">
-                            <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About us</span></h2>
-                                <p class="lead fw-light mb-4">*description*</p>
-                                <p class="text-muted">*more description*</p>
-                                    <div class="one">Miami YAD is a branch of BLIA (Buddha's Light International Association) Fo Guang Shan Miami subchapter.
-                                        YAD stands for "Young Adult Division", and it is as the name implies.
-                                        We are a group that is led by only young adults, who are between the ages of 13-18.
-                                        We do volunteer activities such as helping BLIA Miami with their events, or hosting our own events.
-                                        We also do socials outside of volunteering, such as hanging out at malls, going to escape rooms, eating meals after meetings.
-                                        * just a rough draft so it can be edited later *
-                                    </div>
-                                    <div class = "centerVid vidPosition">
-                                        <!--change this to whatever link like insta or facebook for yad-->
-                                        <video width="360" height="240" controls>
-                                            <source src="movie.mp4" type="video/mp4">
-                                            <source src="movie.ogg" type="video/ogg">
-                                          Your browser does not support the video tag.
-                                          </video>
-                                          <div class="d-flex  fs-2 gap-4 iconGap">
-                                            <a class="text-gradient" href="https://instagram.com/miamiyad?igshid=NjIwNzIyMDk2Mg==" target = "_blank"><i class="bi bi-instagram"></i></a>
-                                            <a class="text-gradient" href="https://www.youtube.com/@Studio-BDS/videos" target = "_blank"><i class="bi bi-youtube"></i></a>
-                                            <a class="text-gradient" href="https://www.facebook.com/people/Miami-YAD/100090081758325/" target = "_blank"><i class="bi bi-facebook"></i></a>
-                                        </div>
-                                        
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="bg-slightly-dark py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-8">
-                            <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Upcoming Events</span></h2>
-                                <p class="text-muted">Please see below for our next three upcoming events!</p>
-                                <div class="row row-cols-1 row-cols-md-3 g-4">
-                                    <div id="d2fa5489-5bac-41cd-904f-436afc8458d8" class="col card">
-                                        <div class="card h-100">
-                                            <img src="event1_image.jpg" class="card-img-top" alt="Event 1 Image">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Event 1</h5>
-                                                <p class="card-text">Event 1 description goes here.</p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a href="event1_link.html" class="btn btn-primary">Learn More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="c9ebc5d7-b479-46fc-af67-c6626b17a079" class="col card">
-                                        <div class="card h-100">
-                                            <img src="event2_image.jpg" class="card-img-top" alt="Event 2 Image">
-                                            <div class="card-body">
-                                                <!-- Event 2 content -->
-                                                <h5 class="card-title">Event 2</h5>
-                                                <p class="card-text">Event 2 description goes here.</p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a href="event2_link.html" class="btn btn-primary">Learn More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="bddc67a0-9104-4fdd-95b1-5215ddc6cdeb" class="col card">
-                                        <div class="card h-100">
-                                            <img src="event3_image.jpg" class="card-img-top" alt="Event 3 Image">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Event 3</h5>
-                                                <p class="card-text">Event 3 description goes here.</p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a href="event3_link.html" class="btn btn-primary">Learn More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-        </main>
-        <footer class="bg-white py-4 mt-auto">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>BLIA Miami YAD - Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">BLIA &copy; All rights reserved</div></div>
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">BLIA Miami YAD</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="calendar.html">Calendar</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+        </nav>
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card p-4 shadow-sm">
+                            <div class="text-center mb-4">
+                                <h2 class="fw-bolder">Contact Information</h2>
+                                <p class="lead gapRemove">
+                                    <span class = "lineAcross">Please feel free to reach out to us directly!</span>
+                                </p>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li><strong>Email:</strong>miami@bliayad.org</li>
+                                <li><strong>Phone:</strong>(954) 933-0055</li>
+                                <li><strong>Address:</strong>9341 NW 57th St, Tamarac, FL 33351</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0">BLIA &copy; All rights reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
 </html>

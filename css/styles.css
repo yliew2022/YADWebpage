@@ -2441,6 +2441,14 @@ body {
     opacity: 1;
 }
 
+.gapRemove {
+  margin-bottom: 0;
+}
+
+.lineAcross {
+  border-bottom: 2px solid #333; 
+  padding-bottom: 2px;
+}
 
 .header {
   display: flex;
