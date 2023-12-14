@@ -12,7 +12,7 @@ fetch('http://localhost:5678/events')
                             <div class="card-body">
                                 <h5 class="card-title">${event.eventName}</h5>
                                 <p class="card-text">${event.eventDetails}</p>
-                                <p class="card-text">${event.date}</p> <!-- Add this line for displaying date -->
+                                <p class="card-text">${event.date}</p>
                             </div>
                             <div class="card-footer">
                                 <a href="${event.link}" class="btn btn-primary">RSVP</a>
@@ -25,5 +25,23 @@ fetch('http://localhost:5678/events')
             console.error('"events" property is not an array in the fetched data.');
         }
     })
-    .catch(error => console.error('Error fetching data:', error));
+.catch(error => console.error('Error fetching data:', error));
+
+let slideIndex = 0;
+                
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";     
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 4000); 
+}
+                
+showSlides();
 
