@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentMonthDate = new Date(today.getFullYear(), today.getMonth(), 1);
 
     function renderCalendar() {
-        fetch('http://localhost:5678/events')
+        fetch('https://yadwebpage-ab336b48b130.herokuapp.com/events')
             .then(response => response.json())
             .then(data => {
                 if (Array.isArray(data.events)) {
