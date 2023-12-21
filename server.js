@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const glob = require('glob');
+const PORT = process.env.PORT || 5678;
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 const allowedOrigins = ['http://localhost:3000','https://yadwebpage-ab336b48b130.herokuapp.com'];
@@ -174,10 +175,9 @@ app.put('/events/:eventId', function (req, res) {
   });
 });
 
-const server = app.listen(5678);
-console.log('Server is running...');
-console.log('Webapp:   http://localhost:5678/');
-console.log('API Docs: http://localhost:5678/api-docs');
+const server = app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
 module.exports = {
   server: server,
