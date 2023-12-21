@@ -5,7 +5,7 @@ const fs = require('fs');
 const glob = require('glob');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
-
+const allowedOrigins = ['http://localhost:3000','https://yadwebpage-ab336b48b130.herokuapp.com'];
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express');
 const swaggerOptions = {
@@ -20,7 +20,15 @@ const swaggerOptions = {
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
-
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('./public'));
