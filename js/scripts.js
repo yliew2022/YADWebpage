@@ -27,7 +27,7 @@ fetch('http://localhost:5678/events')
     })
 .catch(error => console.error('Error fetching data:', error));
 
-let slideIndex = 0;
+/*let slideIndex = 0;
                 
 function showSlides() {
     let i;
@@ -43,5 +43,5 @@ function showSlides() {
     setTimeout(showSlides, 4000); 
 }
                 
-showSlides();
+showSlides();*/
 
