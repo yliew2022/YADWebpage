@@ -46,7 +46,9 @@ app.use((req, res, next) => {
   }
   next();
 });
-
+app.get('/', (req,res) =>{
+  res.render('index', {title: "Log in"})
+})
 const MAX_EVENTS = 3;
 
 function getEventFilePath(eventId) {
