@@ -5,6 +5,7 @@ const fs = require('fs');
 const glob = require('glob');
 const PORT = process.env.PORT || 5678;
 const path = require('path');
+const cors = require('cors');
 const { v4: uuidv4 } = require('uuid');
 const allowedOrigins = ['http://localhost:3000','https://yadwebpage-ab336b48b130.herokuapp.com'];
 const swaggerJsDoc = require('swagger-jsdoc');
@@ -178,7 +179,7 @@ app.put('/events/:eventId', function (req, res) {
 });
 
 const server = app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port http://localhost:${PORT}/`);
 });
 
 module.exports = {
