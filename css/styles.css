@@ -1531,6 +1531,7 @@ p {
 
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
+  font-weight: 700;
 }
 
 .card-text:last-child {
