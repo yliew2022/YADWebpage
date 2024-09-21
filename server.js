@@ -7,6 +7,8 @@ const PORT = process.env.PORT || 5678;
 const path = require('path');
 const cors = require('cors');
 const { v4: uuidv4 } = require('uuid');
+const {google} = require('googleapis');
+const compute = google.compute('v1');
 const allowedOrigins = ['http://localhost:5678','https://yadwebpage-ab336b48b130.herokuapp.com'];
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express');
@@ -19,6 +21,8 @@ const swaggerOptions = {
   },
   apis: ['server.js'],
 };
+
+
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
@@ -35,7 +39,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('./public'));
 app.use(express.static(path.join(__dirname, '/')));
-
+app.use(express.json());
 app.use((req, res, next) => {
   res.set('Content-Type', 'application/json');
   next();
@@ -79,6 +83,7 @@ function getEvents() {
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, '/index.html'));
 });
+
 
 /**
  * @swagger
