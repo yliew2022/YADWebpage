@@ -1,4 +1,4 @@
-fetch('https://yadwebpage-ab336b48b130.herokuapp.com/events')
+/*fetch('https://yadwebpage-ab336b48b130.herokuapp.com/events')
     .then(response => response.json())
     .then(data => {
         if (Array.isArray(data.events)) {
@@ -25,7 +25,7 @@ fetch('https://yadwebpage-ab336b48b130.herokuapp.com/events')
             console.error('"events" property is not an array in the fetched data.');
         }
     })
-.catch(error => console.error('Error fetching data:', error));
+.catch(error => console.error('Error fetching data:', error));*/
 
 /*let slideIndex = 0;
                 
@@ -44,4 +44,40 @@ function showSlides() {
 }
                 
 showSlides();*/
+
+
+// Function to fetch event data using AJAX and populate the event card
+function loadEventData() {
+    // Fetch the event data from the server
+    fetch('/events')
+        .then(response => response.json())  // Parse the JSON data from response
+        .then(data => {
+            // Assuming the events array is returned
+            const event1 = data.events.find(event => event.eventId === 'd2fa5489-5bac-41cd-904f-436afc8458d8');
+            const event2 = data.events.find(event => event.eventId === 'c9ebc5d7-b479-46fc-af67-c6626b17a079');
+            const event3 = data.events.find(event => event.eventId === 'bddc67a0-9104-4fdd-95b1-5215ddc6cdeb');
+            if (event1) {
+                // Update event 1 card with the fetched event data
+                document.getElementById('event1-title').textContent = event1.eventName;
+                document.getElementById('event1-description').textContent = event1.eventDetails;
+                document.getElementById('event1-image').src = event1.image;
+                document.getElementById('event1-link').href = event1.link;
+
+                document.getElementById('event2-title').textContent = event2.eventName;
+                document.getElementById('event2-description').textContent = event2.eventDetails;
+                document.getElementById('event2-image').src = event2.image;
+                document.getElementById('event2-link').href = event2.link;
+
+                document.getElementById('event3-title').textContent = event3.eventName;
+                document.getElementById('event3-description').textContent = event3.eventDetails;
+                document.getElementById('event3-image').src = event3.image;
+                document.getElementById('event3-link').href = event3.link;
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching event data:', error);
+        });
+}
+
+document.addEventListener('DOMContentLoaded', loadEventData);
 

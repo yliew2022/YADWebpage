@@ -2230,15 +2230,20 @@ p {
 
 .text-center {
   text-align: center !important;
+  margin-top: 0;
 }
 
 .text-uppercase {
   text-transform: uppercase !important;
 }
 
-/* rtl:begin:remove */
+.img-fluid {
+  margin-top: 40px; /* Adjust this value to increase/decrease space */
+  border-radius: 10px; /* Optional rounded corners */
+  margin-left: 35%;
+}
 
-/* rtl:end:remove */
+
 
 .text-primary {
   --bs-text-opacity: 1;
@@ -2350,9 +2355,7 @@ body {
   max-width: 70%; 
 }
 
-.vidPosition {
-  position: relative;
-}
+
 
 @media (min-width:767px) {
   .one {
@@ -2373,16 +2376,28 @@ body {
   margin-left: 35%;
 }
 
-.centerVid {
+.d-flex {
   display: flex;
-  margin-top: 15%;
-  margin-left: 85%;
-  margin-right: auto;
-  width: 40%;
-  text-align: center;
-  align-items: right;
-  flex-direction: column;
+/* Align items at the top */
 }
+
+.text-container {
+  max-width: 60%; /* Control the width of the text container */
+}
+
+.centerVid {
+  margin-left: 2x; /* Space between the paragraph and video */
+  width: 40%; /* Maintain width */
+}
+
+.vidPosition {
+  position: relative;
+  top: 300px;
+  left: 15px;
+}
+
+
+
 
 .calendar {
   margin-top: 5%;

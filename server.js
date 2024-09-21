@@ -56,6 +56,14 @@ function getEventFilePath(eventId) {
   return `events/${eventId}.json`;
 }
 
+app.get('/events', function (req, res) {
+  const obj = {};
+  obj.events = getEvents();
+  return res.status(200).send(obj);
+});
+
+
+
 function getEvents() {
   const events = [];
   for (let i = 1; i <= MAX_EVENTS; i++) {
