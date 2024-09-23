@@ -1,3 +1,6 @@
+yadwebpage/node_modules
 /node_modules
+/.env
+yadwebpage/.env
 /DS_Store
 /coverage
