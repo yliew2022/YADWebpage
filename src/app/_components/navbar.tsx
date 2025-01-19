@@ -120,7 +120,7 @@ const Navbar: React.FunctionComponent = (props) => {
           <Link
             key={eachItem.id}
             href={eachItem.href}
-            className={`text-sm font-medium transition-colors ${
+            className={`text-lg font-medium transition-colors ${
               isActive(eachItem.href)
                 ? "text-red-600"
                 : "text-gray-600 hover:text-red-600"

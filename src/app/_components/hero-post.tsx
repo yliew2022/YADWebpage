@@ -7,7 +7,6 @@ type Props = {
   title: string;
   coverImage: string;
   excerpt: string;
-  author: Author;
   slug: string;
 };
 
@@ -15,7 +14,6 @@ export function HeroPost({
   title,
   coverImage,
   excerpt,
-  author,
   slug,
 }: Props) {
   return (
@@ -36,7 +34,6 @@ export function HeroPost({
         </div>
         <div>
           <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          <Avatar name={author.name} picture={author.picture} />
         </div>
       </div>
     </section>

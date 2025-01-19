@@ -1,7 +1,7 @@
 ---
 title: "What do we do?"
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
-coverImage: "/assets/blog/hello-world/cover.jpg"
+coverImage: "/assets/blog/hello-world/cover.png"
 author:
   name: Tim Neutkens
   picture: "/assets/blog/authors/tim.jpeg"
